@@ -351,7 +351,8 @@ async def startup_event():
     else:
         print("✅ Windows-safe API ready!")
 
+port = 8000
 if __name__ == "__main__":
     import uvicorn
     print("🪟 Starting Windows-Safe eDNA API...")
-    uvicorn.run("windows_safe_api:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("windows_safe_api:app", host="0.0.0.0", port=port, reload=True)
